@@ -3,7 +3,6 @@ import { render } from 'react-dom';
 import { Router, hashHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import store from './store/store';
-import { getCountries } from './actions/actions-countries.js';
 import DevTools from './devtools/DevTools';
 import routes from './routes';
 import './country.css';
@@ -17,5 +16,3 @@ render(
     </Provider>,
     document.getElementById('root')
 );
-
-store.dispatch(getCountries());
