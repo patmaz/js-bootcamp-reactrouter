@@ -1,8 +1,12 @@
 import {combineReducers} from "redux";
-import countriesReducer from './countries-reducer';
+import countries from './countries';
+import searchText from './searchText';
+import selectedContinent from './selectedContinent';
 
 const reducers = combineReducers({
-    countriesReducer
+  countries,
+  searchText,
+  selectedContinent
 });
 
 export default reducers;
